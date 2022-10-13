@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="scripts.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <header><div id='banner'><img src="assets/odin.png" alt="image of Odin"><h1>Odin</h1></div></header>
+    <div id='page-content'>
+        <div id="intro-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <br />
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <div class='form-row'>
+                    <div class='field-container'>
+                        <label>FIRST NAME</label><input type='text' required maxlength="30">
+                    </div>
+                    <div class='field-container'>
+                        <label>LAST NAME</label><input type='text' required maxlength="30">
+                    </div>
+                </div>
+                <div class='form-row'>
+                    <div class='field-container'>
+                        <label>EMAIL</label><input type='email' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" min="4" max="50"> 
+                    </div>
+                    <div class='field-container'>
+                        <label>PHONE NUMBER</label><input type='tel' required minlength=10 maxlength="17">
+                    </div>
+                </div>
+                <div class='form-row'>
+                    <div class='field-container'>
+                        <label>PASSWORD</label><input type='password' required minlength="8" maxlength="25">
+                    </div>
+                    <div class='field-container'>
+                        <label>CONFIRM PASSWORD</label><input type='password' required minlength="8" maxlength="25">
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <p style="font-weight: 200; margin-left: 5%;">Already have an account? <a href="" style="color:#596D48; font-weight: bold; text-decoration: none;">Log in</a></p>
+    </div>
+</body>
+</html>
